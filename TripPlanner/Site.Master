@@ -17,10 +17,8 @@
 
 </head>
 <body>
-    <form runat="server">
-        <asp:ScriptManager runat="server">
-<%--    <form runat="server" data-ng-app="myApp">
-        <asp:ScriptManager runat="server" EnablePageMethods="true">--%>
+	<form runat="server" data-ng-app="myApp">
+        <asp:ScriptManager runat="server" EnablePageMethods="true">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
                 <%--Framework Scripts--%>
@@ -67,14 +65,14 @@
             </footer>
         </div>
 
-<%--			<script src="node_modules/angular/angular.min.js"></script>
+			<script src="node_modules/angular/angular.min.js"></script>
 			<script type="text/javascript">
 				(function () {
 					angular.module("myApp", []);
 				})();
 			</script>
 			
-			<asp:ContentPlaceHolder runat="server" ID="scripts"></asp:ContentPlaceHolder>--%>
+			<asp:ContentPlaceHolder runat="server" ID="scripts"></asp:ContentPlaceHolder>
 
     </form>
 </body>

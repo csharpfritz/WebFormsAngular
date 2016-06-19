@@ -15,7 +15,8 @@ namespace TripPlanner
 		{
 		}
 
-		public IQueryable<Trip> GetTrips()
+		[WebMethod]
+		public static IQueryable<Trip> GetTrips()
 		{
 			using (var repo = new TripRepository())
 			{

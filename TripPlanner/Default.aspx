@@ -4,7 +4,7 @@
 
 	<h2>My Trips</h2>
 
-	<asp:GridView runat="server" ID="tripGrid" 
+<%--	<asp:GridView runat="server" ID="tripGrid" 
 		AutoGenerateColumns="false"
 		AllowSorting="true"
 		ItemType="TripPlanner.Models.Trip"
@@ -15,13 +15,12 @@
 			<asp:BoundField DataField="Return" SortExpression="Return" DataFormatString="{0:M/d/yyyy}" HeaderText="Return Date"/>
 			<asp:TemplateField HeaderText="Distance" SortExpression="Distance">
 				<ItemTemplate>
-					<%#: Item.Distance %>  miles
+					<%#: Item.Distance   miles
 				</ItemTemplate>
 			</asp:TemplateField>
 		</Columns>
-	</asp:GridView>
+	</asp:GridView>--%>
 
-	<%--
 	<div data-ng-controller="myController">
 
 	<table id="grid" class="table table-striped table-hover">
@@ -44,9 +43,8 @@
 	</table>
 
 		</div>
---%>
-</asp:Content>
-<%--
+</asp:content>
+
 <asp:Content runat="server" ContentPlaceHolderID="scripts">
 
 	<script type="text/javascript">
@@ -73,4 +71,4 @@
 	</script>
 
 </asp:Content>
---%>
+
